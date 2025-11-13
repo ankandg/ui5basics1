@@ -1,0 +1,44 @@
+{
+    "SalesOrders": [
+        {
+            "SalesOrderID": "SO001",
+            "CustomerID": "CUST001",
+            "Status": "Open",
+            "TotalAmount": "1500.00",
+            "CreatedDate": "2023-10-01",
+            "CreatedBy": "User1"
+        },
+        {
+            "SalesOrderID": "SO002",
+            "CustomerID": "CUST002",
+            "Status": "In Progress",
+            "TotalAmount": "2500.00",
+            "CreatedDate": "2023-10-02",
+            "CreatedBy": "User2"
+        },
+        {
+            "SalesOrderID": "SO003",
+            "CustomerID": "CUST003",
+            "Status": "Completed",
+            "TotalAmount": "3200.00",
+            "CreatedDate": "2023-10-03",
+            "CreatedBy": "User3"
+        },
+        {
+            "SalesOrderID": "SO004",
+            "CustomerID": "CUST004",
+            "Status": "Open",
+            "TotalAmount": "1800.00",
+            "CreatedDate": "2023-10-04",
+            "CreatedBy": "User4"
+        },
+        {
+            "SalesOrderID": "SO005",
+            "CustomerID": "CUST005",
+            "Status": "In Progress",
+            "TotalAmount": "4100.00",
+            "CreatedDate": "2023-10-05",
+            "CreatedBy": "User5"
+        }
+    ]
+}

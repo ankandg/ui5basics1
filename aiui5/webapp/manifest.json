@@ -1,0 +1,84 @@
+{
+    "_version": "1.43.0",
+    
+    "sap.app": {
+        "id": "aiui5",
+        "type": "application",
+        "title": "AI UI5",
+        "applicationVersion": {
+            "version": "1.0.0"
+        }
+    },
+    "sap.ui": {
+                "technology": "UI5",
+                "deviceTypes" :{
+                        "desktop": true,
+                        "phone": true,
+                        "tablet": true
+                                },
+                "fullWidth": true
+    },
+    "sap.ui5":{
+        "rootView": {
+            "id": "aiui5.view.App",
+            "viewName": "aiui5.view.App",
+            "type": "XML"
+
+        },
+        "dependencies": {
+            "minUI5Version": "1.100",
+            "libs": {
+                "sap.ui.core":{ "minVersion": "1.99" },
+                "sap.m":{},
+                "sap.ui.layout":{}           
+             }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "model/salesOrders.json"
+            }
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "viewPath": "aiui5.view",
+                "controlId": "idAppCon",
+                "controlAggregation": "pages",
+                "async": true
+            },
+            "routes": [
+                {
+                    "pattern": "",
+                    "name": "worklist",
+                    "target": "worklist"
+                },
+                {
+                    "pattern": "SalesOrder/{SalesOrderID}",
+                    "name": "object",
+                    "target": "object"
+                }
+            ],
+            "targets": {
+                "worklist": {
+                    "viewType": "XML",
+                    "viewName": "View1",
+                    "viewId": "worklist",
+                    "viewLevel": 1
+                },
+                "object": {
+                    "viewType": "XML",
+                    "viewName": "View2",
+                    "viewId": "object",
+                    "viewLevel": 2
+                }
+            }
+        }
+
+    }
+}

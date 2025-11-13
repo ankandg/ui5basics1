@@ -1,0 +1,27 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form" controllerName="aiui5.controller.View2">
+    <Page id="objectPage" title="Sales Order Details" showNavButton="true" navButtonPress="onNavBack">
+        <content>
+            <form:SimpleForm editable="false" layout="ResponsiveGridLayout">
+                <form:content>
+                    <Label text="Sales Order ID" />
+                    <Text text="{SalesOrderID}" />
+
+                    <Label text="Customer ID" />
+                    <Text text="{CustomerID}" />
+
+                    <Label text="Status" />
+                    <Text text="{Status}" />
+
+                    <Label text="Total Amount" />
+                    <Text text="{TotalAmount}" />
+
+                    <Label text="Created Date" />
+                    <Text text="{CreatedDate}" />
+
+                    <Label text="Created By" />
+                    <Text text="{CreatedBy}" />
+                </form:content>
+            </form:SimpleForm>
+        </content>
+    </Page>
+</mvc:View>
