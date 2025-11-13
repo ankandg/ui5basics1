@@ -1,0 +1,28 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+          xmlns="sap.m"
+          controllerName="aeonx.hr.payroll.controller.View1">
+       <Page title="View1">
+             <headerContent>
+                  <Button text="Go to next" icon="sap-icon://arrow-right" press="onNext" ></Button>
+            </headerContent>
+            <SearchField id="idSearch"></SearchField>
+            <List id="idMyList">
+                  <items>
+                        <ObjectListItem intro="A" title="ABC" 
+                                    number="12" numberUnit="tr"
+                                    numberState="Warning"
+                                    >
+                             <firstStatus>
+                                    <ObjectStatus title="Active"></ObjectStatus>
+                             </firstStatus>
+                             <secondStatus>
+                                    <ObjectStatus text="yes"  ></ObjectStatus>
+                             </secondStatus>
+                             
+                        </ObjectListItem>
+                  </items>
+            </List>
+                
+      </Page>
+        
+</mvc:View>
